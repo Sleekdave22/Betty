@@ -1,3 +1,11 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Succes)
+ */
+
 int main(void)
 {
 	int tho;
@@ -33,3 +41,4 @@ for ( tho = 0 ; tho < 10 ; tho++)
 	putchar('\n');
 	return (0);
 }
+
