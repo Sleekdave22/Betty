@@ -2,11 +2,10 @@
 
 /**
  * main - Entry point
- *
  * Return: Always 0 (Succes)
  */
 
-int main(void)
+int main()
 {
 	int tho;
 	int hun;
@@ -41,4 +40,3 @@ for ( tho = 0 ; tho < 10 ; tho++)
 	putchar('\n');
 	return (0);
 }
-
