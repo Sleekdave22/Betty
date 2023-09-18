@@ -1,4 +1,16 @@
-int n = 402
-int *p = &n
+#include "main.h"
+#include <stdio.h>
 
-*p = 98
+/**
+ * main - check the code 
+ *
+ *code that updates a value via a pointer
+ *
+ * Return: Always 0.
+ */
+
+void reset_to_98(int *n);
+
+{
+   *n = 98;
+}
