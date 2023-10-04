@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _abs prints the absolute value of a number
-*@i: number sorted
-*Return: returns 0
-*/
+ * _abs - computes the value of an integer
+ * @i: number sorted
+ * Return: the absolute value of int
+ */
 int _abs(int i)
 {
 if (i > 0)
