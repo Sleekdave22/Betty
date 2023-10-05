@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * str_concat - Main Entry
- * @s1: input
- * @s2: input
+ * @s1: first input
+ * @s2: second input
  * Return: 0
  */
 char *str_concat(char *s1, char *s2)
