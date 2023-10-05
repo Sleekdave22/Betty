@@ -1,42 +1,41 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * _strlen - return length of a string
- *
- * @s: char type
- * Return:  length of string
+ * str_concat - Main Entry
+ * @s1: input
+ * @s2: input
+ * Return: 0
  */
-int _strlen(char *s)
+char *str_concat(char *s1, char *s2)
 {
-	int a;
+	unsigned int size1 = 0, size2 = 0;
+	char *ptr, *ret;
 
-	for (a = 0; s[a] != '\0'; a++)
-	;
-	return (a);
+	ptr = s1;
+	if (s1)
+		while (*ptr++)
+			size1++;
+	else
+		s1 = "";
+
+	ptr = s2;
+	if (s2)
+		while (*ptr++)
+			size2++;
+	else
+		s2 = "";
+
+	ret = malloc(size1 + size2 + 1);
+	if (!ret)
+		return (NULL);
+
+	ptr = ret;
+	while (*s1)
+		*ptr++ = *s1++;
+	while (*s2)
+		*ptr++ = *s2++;
+	*ptr = 0;
+
+	return (ret);
 }
-/**
- * _strncat - function to concatnate strings with n bytes
- *
- * @dest: destination for concatnation
- * @src: source of string
- * @n: int type for size of byte
- * Return: dest
- */
-char *_strncat(char *dest, char *src, int n)
-{
-	int dest_len, a;
-
-	dest_len = _strlen(dest);
-	for (a = 0; a < n && src[a] != '\0'; a++)
-		dest[dest_len + a] = src[a];
-	return (dest);
-}
-
-/**
- * *str_concat - function to allocate space for sting concatnation
- * @s1: array pointer to destination of string
- * @s2: array pointer to source of string
- * Return: return pointer to copy of string
- */
-

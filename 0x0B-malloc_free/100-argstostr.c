@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * argstostr - Main Entry
- * @ac: the input 
+ * @ac: the input
  * @av: second input
  * Return: always 0
  */
